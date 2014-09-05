@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/import.css">
+<script src="js/import.js"></script> 
+<title>タグへのアクセス（1）</title>
+
+</head>
+<body>
+
+<div id="content">
+	<article role="main">
+		<h1>タグへのアクセス（1）</h1>
+		<div class="content">
+			<section>
+				<h2>eqを使ってタグの順番にアクセス</h2>
+				<p>指定したタグの何番目のタグかを指定してアクセスする。<br>（最初のタグは0になります。）</p>
+
+				<pre class="prettyprint lang-js">//1番最初のタグにアクセス
+$('#test li').eq(0);</pre>
+			</section>
+
+			<section>
+				<h2>子供のタグを指定してアクセス</h2>
+				<pre class="prettyprint lang-js">
+//#test li の2番めのタグの子供のliにアクセス
+$('#test li').eq(1).find('li');</pre>
+
+				<p>下記のように続けて書くことができます。</p>
+				<pre class="prettyprint lang-js">
+//#test li の3番めのタグの子供のliの5番めのタグにアクセス
+$('#test li').eq(2).find('li').eq(4);</pre>
+			</section>
+			
+			<section>
+				<h2>タグの中身を取ってくる</h2>
+				<pre class="prettyprint lang-js">$('タグ').text();</pre>
+			</section>
+		</div>
+	</article>
+</div>
+
+
+</body>
+</html>

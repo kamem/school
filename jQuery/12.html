@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/import.css">
+<title>数学関数（Math）で演算する。</title>
+
+</head>
+<body>
+
+<div id="content">
+	<article role="main">
+		<h1>数学関数（Math）で演算する。</h1>
+	
+		<div class="content">
+		
+			<section>
+				<h3>0以上1未満の乱数を返す</h3>
+				<pre class="prettyprint lang-js">Math.random();</pre>
+				<p>例</p>
+				<pre class="prettyprint lang-js">
+console.log(Math.random());
+
+表示結果
+0.40883730142377317　のような乱数
+</pre>
+			</section>
+			<section>
+				<h3>引数の中から一番大きな値を返す</h3>
+				<pre class="prettyprint lang-js">Math.max();</pre>
+				<p>例</p>
+				<pre class="prettyprint lang-js">
+console.log(Math.max(1,2,3,6,4,5));
+
+表示結果
+6
+</pre>
+			</section>
+			<section>
+				<h3>引数の中から一番小さな値を返す</h3>
+				<pre class="prettyprint lang-js">Math.min();</pre>
+				<p>例</p>
+				<pre class="prettyprint lang-js">
+console.log(Math.min(1,2,3,6,4,5));
+
+表示結果
+1
+</pre>
+			</section>
+
+			<section>
+				<h3>小数点以下を切り捨てた整数を返す</h3>
+				<pre class="prettyprint lang-js">Math.floor(number);</pre>
+				<p>例</p>
+				<pre class="prettyprint lang-js">
+console.log(Math.floor(Math.random() * 3));
+
+表示結果
+整数 0 〜 2
+</pre>
+			</section>
+			<section>
+				<h3>小数点以下を繰り上げした整数を返す</h3>
+				<pre class="prettyprint lang-js">Math.ceil(number);</pre>
+				<p>例</p>
+				<pre class="prettyprint lang-js">
+console.log(Math.ceil(Math.random() * 3));
+
+表示結果
+整数 1 〜 3
+</pre>
+			</section>
+			<section>
+				<h3>小数点以下を四捨五入した整数を返す</h3>
+				<pre class="prettyprint lang-js">Math.round(number);</pre>
+				<p>例</p>
+				<pre class="prettyprint lang-js">
+console.log(Math.round(Math.random() * 3));
+
+表示結果
+整数 0 〜 3
+</pre>
+			</section>
+		</div>
+	</article>
+</div>
+
+
+</body>
+</html>

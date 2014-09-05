@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/import.css">
+<title>変数・型・計算</title>
+</head>
+<body>
+
+<div id="content">
+	<article role="main">
+	
+		<div class="content">
+<section>
+	<h2>変数・演算子</h2>
+	<p>var 変数名;</p>
+	<section>
+		<h3>【演算子（代入演算子）】</h3>
+		<ul>
+			<li>a = b;　a に b を代入</li>
+			<li>a += b;　a と b を足した値をaに代入（a = a + b）</li>
+			<li>a -= b;　a と b を引いた値をaに代入（a = a - b）</li>
+			<li>a *= b;　a と b を掛けた値をaに代入（a = a * b）</li>
+			<li>a /= b;　a と b を割った値をaに代入（a = a / b）</li>
+			<li>a %= b;　a と b を割った余りをaに代入（a = a % b）</li>
+		</ul>
+	</section>
+
+	<section>
+		<h3>aに1を足す</h3>
+		<ul>
+			<li>a++</li>
+			<li>++a</li>
+		</ul>
+	</section>
+
+	<section>
+		<h3>aから1を引く</h3>
+		<ul>
+			<li>a--</li>
+			<li>--a</li>
+		</ul>
+	</section>
+
+	<section>
+		<h3>□ 演算子の優先順位</h3>
+		<p>基本はひだりから<br>
+下記がある場合は優先順位に従って計算</p>
+		<ol>
+			<li>()</li>
+			<li>*/%</li>
+			<li>+-</li>
+		</ol>
+	</section>
+</section>
+
+	<section>
+		<h2>型</h2>
+		<ul>
+			<li>文字列 : String
+				<p>例）'こんばんは'　'test'　'0'</p>
+				<dl>
+					<dt>※ 補足</dt>
+					<dd>シングルクオートで囲まれてる文字列内でシングルクオートを使いたい場合 : \'</dd>
+					<dd>同様にダブルクオートで囲まれてる文字列内でダブルクオートを使いたい場合 : \"</dd>
+					<dd>文字列を開業したい場合 : \n</dd>
+				</dl>
+			</li>
+			<li>数値 : Number
+				<p>例）0　1</p>
+			</li>
+			<li>論理値 : Boolean
+				<p>例）true　false</p>
+			</li>
+		</ul>
+
+		<section>
+			<h3>□ 型の変換</h3>
+			<ul>
+				<li>String();　文字列に変換</li>
+				<li>Number();　数字に変換</li>
+				<li>Boolean();　論理型に変換</li>
+			</ul>
+			<p>例）String(10) + 10;　→　1010<br>
+			Number('10') + 10;　→ 20</p>
+		</section>
+	
+		<section>
+			<h2>比較演算子</h2>
+			<ul>
+				<li>a == b　値が等しい場合にtrue</li>
+				<li>a === b　値と型が等しい場合 true</li>
+				<li>a != b     値が等しくない場合 true</li>
+				<li>a !== b　値と型が等しくない場合 true</li>
+				<li>a &gt; b　a より b が小さい場合 true</li>
+				<li>a &lt; b　a が b より小さい場合 true</li>
+				<li>a &gt;= b　a が b 以上の場合 true</li>
+				<li>a &lt;= b　a が b 以下の場合 true</li>
+			</ul>
+		</section>
+		<section>
+			<h2>論理演算子</h2>
+			<ul>
+				<li>a &amp;&amp; b　a b 2つの式・値が正しい（tureの）場合 true</li>
+				<li>a || b　a b どちらかの式・値が正しい（tureの）場合 true</li>
+				<li>!a　aが正しくない（falseの）場合 true</li>
+			</ul>
+		</section>
+	
+		<section>
+			<h2>jsのコメントの書き方</h2>
+			<ul>
+				<li>一行コメント : //</li>
+				<li>複数行コメント : /* */</li>
+			</ul>
+		</section>
+
+				</section>
+			</section>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

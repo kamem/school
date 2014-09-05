@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/import.css">
+<script src="js/import.js"></script> 
+<title>jQueryを使ってみよう</title>
+
+</head>
+<body>
+
+<div id="content">
+	<article role="main">
+		<h1>jQueryを使ってみよう</h1>
+		<div class="content">
+			<p class="download"><a href="file/practice.zip">練習用ファイルのダウンロード</a></p>
+			<section>
+				<h2>jQueryとは</h2>
+				<p>javascriptを簡単に書けるようにするためのライブラリです。</p>
+				<p>例（タグにアクセスするやり方）</p>
+				<pre class="prettyprint lang-js">//ID「tag」（CSSでいうところの#tag）にアクセスする方法
+				
+//通常のJavascriptの場合
+document.getElementById('tag');
+//jQueryの場合
+$('#tag');</pre>
+				<p>上記のようにCSSと似た書き方でタグにアクセスできます。</p>
+
+				<pre class="prettyprint lang-js">
+$('div.nav ul li');//CSSと同様の記述でタグにアクセス</pre>
+			</section>
+
+			<section>
+				<h2>ページが読み込まれたら関数を実行</h2>
+				<p>まずはjsを読み込ませたら下記を書くようにしましょう。<br>
+タグを読み込む前に実行してしまうと<em>「タグがありません」</em>というエラーがでてしまうため、タグの読み込みが終わってから処理を実行するという記述です。</p>
+						<pre class="prettyprint lang-js">$(function(){
+//この中に処理を書いていきます
+});
+</pre>
+				
+			</section>
+
+			<section>
+				<h2>jQueryでCSSを操作してみよう！</h2>
+				<pre class="prettyprint lang-js">$('タグ').css({
+	color:'red',
+	marginLeft:'10px'
+});</pre>
+			</section>
+			<section>
+				<h2>jQueryでクラス名を操作してみよう！</h2>
+				
+				<section>
+					<h3>クラス名を追加する</h3>
+					<pre class="prettyprint lang-js">$('タグ').addClass('追加したいクラス名');</pre>
+					<p>例</p>
+					<pre class="prettyprint lang-js">$('p').addClass('on');</pre>
+				</section>
+				<section>
+					<h3>クラス名を削除する</h3>
+					<pre class="prettyprint lang-js">$('タグ').removeClass('追加したいクラス名');</pre>
+					<p>例</p>
+					<pre class="prettyprint lang-js">$('p').removeClass('on');</pre>
+				</section>
+				<section>
+					<h3>実行するたび「追加・削除」を繰り返す</h3>
+					<pre class="prettyprint lang-js">$('タグ').toggleClass('追加したいクラス名');</pre>
+					<p>例</p>
+					<pre class="prettyprint lang-js">$('p').toggleClass('on');</pre>
+				</section>
+			</section>
+			<section>
+				<h2>マウスのイベント操作で処理を実行してみよう！</h2>
+				
+				<section>
+					<h3>クリックした時に実行</h3>
+					<pre class="prettyprint lang-js">$('タグ').on('click',function(){
+//クリック時に実行したい処理
+});</pre>
+				</section>
+				<section>
+					<h3>マウスを載せた時に実行</h3>
+					<pre class="prettyprint lang-js">$('タグ').on('mouseover',function(){
+//クリック時に実行したい処理
+});</pre>
+				</section>
+				<section>
+					<h3>マウスが外れた時に実行</h3>
+					<pre class="prettyprint lang-js">$('タグ').on('mouseout',function(){
+//クリック時に実行したい処理
+});</pre>
+				</section>
+			</section>
+		</div>
+	</article>
+</div>
+
+
+</body>
+</html>

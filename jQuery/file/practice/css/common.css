@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.on {
+	color: red;
+}
+
+ul {
+	width: 80%;
+	margin: 0 auto;
+}
+
+ul li ul {
+	display: none;
+}
+
+.on ul {
+	display: block;
+}
+
+ul li {
+	list-style-type: none;
+	background-color: #943a3a;
+	color: #fff;
+	text-align: center;
+	width: 25%;
+	float: left;
+}
+ul li ul li {
+	width: 100%;
+	float: none;
+}

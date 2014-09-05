@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/import.css">
+<title>スライドショーを作ってみる。</title>
+
+</head>
+<body>
+
+<div id="content">
+	<article role="main">
+		<div class="content">
+			<section>
+				<h2>CSSを変更する</h2>
+				
+				<pre class="prettyprint lang-html">
+$("タグ").css({ 
+    css : 値
+});
+</pre>
+					<p>例</p>
+						<pre class="prettyprint lang-html">
+$('#slide .section').css({ 
+    opacity : 0,
+    marginLeft : 10 + 'px',
+    left: 100 + 'px'
+});</pre>
+			</section>
+		
+			<section>
+				<h2>アニメーションさせる</h2>
+				
+				<pre class="prettyprint lang-html">
+$("タグ").animate({ 
+    css : 値
+}, スピード,イージング,アニメーションが終わった後に実行する関数 );
+</pre>
+					<p>例</p>
+						<pre class="prettyprint lang-html">
+$('#slide .section').animate({ 
+    opacity : 0,
+    marginLeft : 10 + 'px',
+    left: 100 + 'px'
+}, 1000);</pre>
+			</section>
+			
+			<section>
+				<h2>タグの数だけ繰り返し処理を行う</h2>
+				
+				<pre class="prettyprint lang-html">
+$("タグ").each(function(i){
+処理
+});
+</pre>
+					<p>例</p>
+						<pre class="prettyprint lang-html">
+$('#slide .section').each(function(i){
+	console.log(i);
+	
+	$(this).css({
+		opacity : 0
+	});
+});</pre>
+			</section>
+		</div>
+	</article>
+</div>
+
+
+</body>
+</html>

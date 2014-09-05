@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/import.css">
+<title>break文　continue文</title>
+
+</head>
+<body>
+
+<div id="content">
+	<article role="main">
+		<h1>break文　continue文</h1>
+	
+		<div class="content">
+	
+		<section>
+			<h2>break文　continue文</h2>
+			<section>
+				<h3>break文</h3>
+				<p>ループ処理を途中でストップする。</p>
+<pre class="prettyprint lang-js">
+for(var i = 0; i &lt; 10; i++) {
+	
+	if(i === 5) {
+		breack;
+	}
+	console.log(i)
+}
+
+出力結果 : 0 1 2 3 4
+</pre>
+			</section>
+			<section>
+				<h3>continue文</h3>
+				<p>ループ処理をとばす。</p>
+<pre class="prettyprint lang-js">
+for(var i = 0; i &lt; 10; i++) {
+	
+	if(i === 5) {
+		continue;
+	}
+	console.log(i)
+}
+
+出力結果 : 0 1 2 3 4 6 7 8 9
+</pre>
+			</section>
+		</section>
+		</div>
+	</article>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

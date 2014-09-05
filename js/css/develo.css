@@ -1,0 +1,493 @@
+@charset "utf-8";
+
+/*
+date : 2007-11-02
+*/
+
+/* entry 2
+---------------*/
+body#entry2 dl.tableIE {
+	margin: 1em 20px !important;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #f5f5f5;
+}
+
+body#entry2 dl.tableIE dt {
+	margin: 0 !important;
+	margin-right: -13em;
+	padding: 0.2em 0;
+	text-indent: 10px;
+	border-top: 1px solid #ccc;
+	float: left;
+	clear: both;
+	display: inline;
+	width: 13em;
+}
+
+body#entry2 dl.tableIE dd {
+	padding: 0.2em 10px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left:13em;
+	background-color: #fff;
+	width: inherit;
+	max-width: none;
+}
+/**/
+
+body#entry2 dl.normal {
+	margin: 1em 20px !important;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #f5f5f5;
+}
+
+body#entry2 dl.normal dt {
+	margin: 0 !important;
+	margin-right: -13em;
+	padding: 0.2em 0;
+	text-indent: 10px;
+	border-top: 1px solid #ccc;
+	float: left;
+	clear: both;
+	display: inline;
+	width: 13em;
+}
+
+body#entry2 dl.normal dd {
+	padding: 0.2em 10px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left:13em;
+	background-color: #fff; 
+	width: inherit;
+	max-width: none;
+}
+
+body#entry2 dl.test {
+	padding: 1em;
+	border: 2px solid #ccc;
+}
+
+body#entry2 dl.test dt {
+	border: none;
+	background-color: #fff;
+}
+
+body#entry2 dl.test dd {
+	margin-left: 0;
+	padding-left: 13em;
+	border: none;
+}
+
+body#entry2 dl.test2 {
+	padding: 1em;
+	padding-left: 0;
+}
+
+body#entry2 dl.test2 dt {
+	border-left: 1em solid #f5f5f5;
+}
+
+body#entry2 dl.test2 dd {
+	margin-left: 1em;
+}
+
+/* entry 22
+---------------*/
+/*1*/
+#entry22 #date1  {
+	line-height: 1.2;
+	letter-spacing: -0.5px;
+}
+
+#entry22 #date1 span.time {
+	font-size: 240%;
+	font-weight: bold;
+	display: block;
+	letter-spacing: 1px;
+}
+
+/*2*/
+#entry22 #date2 {
+	margin-top: -2em;
+	padding-left: 1em;
+}
+
+#entry22 #date2 span.year {
+	width: 3em;
+	height: 1.4em;
+	line-height: 1.4;
+	overflow: hidden;
+	display: block;
+	font-size: 360%;
+	letter-spacing: 6px;
+	color: #eee;
+	font-family: Verdana;
+	margin-bottom: -0.78em;
+	margin-left: -0.35em;
+}
+
+/*3*/
+#entry22 #date3 {
+	border: 1px solid #e6e6e6;
+	width: 7em;
+	background-image: url(../img/common/hiduke.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #fff;
+	text-align: center;
+}
+
+#entry22 #date3 span.year {
+	margin: 0 auto;
+	width: 3em;
+	height: 1.4em;
+	line-height: 1.4;
+	overflow: hidden;
+	display: block;
+	font-family: Verdana;
+}
+
+#entry22 #date3 span.day {
+	margin: 0 auto;
+	display: block;
+	font-size: 360%;
+	width: 1.4em;
+	height: 1.4em;
+	line-height: 1.4;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*4*/
+#entry22 #date4 {
+	padding-top: 3em;
+	border: 1px solid #e6e6e6;
+	width: 7em;
+	background-image: url(../img/common/hiduke.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #fff;
+	text-align: center;
+}
+
+#entry22 #date4 span.year {
+	margin: 0 auto;
+	width: 3em;
+	height: 1.4em;
+	line-height: 1.4;
+	position: relative;
+	top: 2.7em;
+	overflow: hidden;
+	display: block;
+	font-family: Verdana;
+}
+
+#entry22 #date4 span.day {
+	margin: 0 auto;
+	margin-bottom: -1em;
+	display: block;
+	position: relative;
+	top: -1.8em;
+	font-size: 360%;
+	width: 1.4em;
+	height: 1.4em;
+	line-height: 1.4;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*5*/
+#entry22 #date5 {
+	border: 1px solid #e6e6e6;
+	width: 7em;
+	background-image: url(../img/common/hiduke.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #fff;
+	text-align: center;
+}
+
+#entry22 #date5 span.year {
+	margin: 0 auto;
+	margin-top: -1.3em;
+	width: 3em;
+	height: 1.4em;
+	line-height: 1.4;
+	position: relative;
+	top: 6.6em;
+	overflow: hidden;
+	display: block;
+	font-family: Verdana;
+}
+
+#entry22 #date5 span.day {
+	margin: 0 auto;
+	margin-top: 0.1em;
+	display: block;
+	position: relative;
+	top: -0.36em;
+	font-size: 360%;
+	width: 1.4em;
+	height: 1.4em;
+	line-height: 1.4;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+/* entry 66
+---------------*/
+#entry66 dl.calculator {
+	margin: 1em auto !important;
+	padding-bottom: 5px;
+	width: 198px;
+	border: 1px solid #999;
+	background-color: #eee;
+	text-align: center;
+	
+	_width: 200px;
+}
+
+#entry66 dl.calculator dt {
+	padding:10px 15px;
+	margin: 10px;
+	text-align: right;
+	background-color: #ccc;
+}
+
+#entry66 dl.calculator dd {
+	padding: 0;
+	position: relative;
+	left: -7px;
+	margin: 0 0 5px 14px;
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ccc;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+/* entry68
+---------------*/
+
+#entry68 dl.table {
+	margin: 1em 20px;
+	border: 1px solid #ccc;
+	background: #eee !important;
+
+	-webkit-box-shadow: 3px 3px 3px #eee;
+	-webkit-border-radius: 8px;
+}
+
+#entry68 dl.table dt {
+	margin: 0;
+	margin-right: -13em;
+	margin-top: -1px;
+	padding: 0.2em 0;
+	border-top: 1px solid #ccc;
+	float: left;
+	clear: both;
+	display: inline;
+	width: 13em;
+	text-indent: 10px;
+}
+
+#entry68 dl.table dt:nth-of-type(1)  {
+	margin-top: 0;
+	border-top: none;
+}
+
+#entry68 dl.table dd:nth-of-type(1)  {
+	margin-top: 0;
+	border-top: none;
+	-webkit-border-top-right-radius: 8px;
+}
+
+#entry68dl.table dd:nth-of-type(odd) {
+	background-color: #f5f5f5;
+}
+
+#entry68 dl.table dd:last-child {
+	-webkit-border-bottom-right-radius: 8px;
+}
+
+#entry68 dl.table dd {
+	margin-left:13em;
+	margin-top: -1px;
+	padding: 0.2em 10px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	background-color: #fff; 
+}
+
+#entry68 dl.table {
+	/*\*/
+	min-height: 1px;
+	_height: 1%;
+	/* */
+
+	/*\*//*/
+	overflow: hidden;
+	/**/
+}
+
+#entry68 dl.table::after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+
+/* entry71
+---------------*/
+#entry71 ul.circle2 li,
+#entry71 ul.circle li {
+	padding: 0 !important;
+	background-image: none !important;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+#entry71 ul.disc2 li,
+#entry71 ul.disc li {
+	padding: 0 !important;
+	background-image: none !important;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#entry71 ul.square2 li,
+#entry71 ul.square li {
+	padding: 0 !important;
+	background-image: none !important;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+
+/*○*/
+html>/**/body ul.circle li {
+	list-style/*\**/: none\9 !important;
+}
+
+html>/**/body ul.circle li:before {
+	font-size/*\**/: 6px\9;
+	vertical-align/*\**/: middle\9;
+	letter-spacing/*\**/: 1.5em\9;
+}
+
+head~/* */body ul.circle li:before {
+	content/*\**/: "◯";
+}
+
+html:not(:target) ul.circle li:before {
+	content: "";
+}
+
+
+/*●*/
+html>/**/body ul.disc li {
+	list-style/*\**/: none\9 !important;
+}
+
+html>/**/body ul.disc li:before {
+	font-size/*\**/: 6px\9;
+	vertical-align/*\**/: middle\9;
+	letter-spacing/*\**/: 1.5em\9;
+}
+
+head~/* */body ul.disc li:before {
+	content/*\**/: "●";
+}
+
+html:not(:target) ul.disc li:before {
+	content: "";
+}
+
+
+/*■*/
+html>/**/body ul.square li {
+	list-style/*\**/: none\9 !important;
+}
+
+html>/**/body ul.square li:before {
+	font-size/*\**/: 7px\9;
+	vertical-align/*\**/: middle\9;
+	letter-spacing/*\**/: 1.5em\9;
+}
+
+head~/* */body ul.square li:before {
+	content/*\**/: "■";
+}
+
+html:not(:target) ul.square li:before {
+	content: "";
+}
+
+
+/*--------------------
+	mtDevelo
+--------------------*/
+
+body#mtdeveloinfoskin h3,
+div#skin h3 {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+body#mtdeveloinfoskin ul.get,
+div#skin ul.get {
+	margin: 0 -200px 0 20px;
+	width: 175px;
+	float: left;
+	display: inline;
+}
+
+body#mtdeveloinfoskin ul.get li,
+div#skin ul.get li {
+	margin: 0 0 10px 0;
+	padding: 0;
+	background-image: none;
+}
+
+body#mtdeveloinfoskin dl.data,
+div#skin dl.data {
+	margin: 0 20px 0 220px;
+	display: inline;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	background-color: #f5f5f5;
+}
+
+body#mtdeveloinfoskin dl.data dt,
+div#skin dl.data dt {
+	margin: 0;
+	margin-right: -13em;
+	padding: 0.2em 0;
+	text-indent: 10px;
+	border-top: 1px solid #ccc;
+	float: left;
+	clear: both;
+	display: inline;
+	width: 13em;
+}
+
+body#mtdeveloinfoskin dl.data dd ,
+div#skin dl.data dd {
+	padding: 0.2em 10px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left:13em;
+	background-color: #fff; 
+}
