@@ -1,15 +1,16 @@
 <!DOCTYPE>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/import.css">
-<title>スライドショーを作ってみる。</title>
-
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/import.css">
+	<title>スライドショーを作ってみる。</title>
 </head>
 <body>
 
 <div id="content">
 	<article role="main">
+		<h1>スライドショーを作ってみる。</h1>
+
 		<div class="content">
 			<section>
 				<h2>CSSを変更する</h2>
@@ -19,7 +20,7 @@ $("タグ").css({
     css : 値
 });
 </pre>
-					<p>例</p>
+				<p>例</p>
 						<pre class="prettyprint lang-html">
 $('#slide .section').css({ 
     opacity : 0,
@@ -27,7 +28,7 @@ $('#slide .section').css({
     left: 100 + 'px'
 });</pre>
 			</section>
-		
+
 			<section>
 				<h2>アニメーションさせる</h2>
 				
@@ -36,7 +37,7 @@ $("タグ").animate({
     css : 値
 }, スピード,イージング,アニメーションが終わった後に実行する関数 );
 </pre>
-					<p>例</p>
+				<p>例</p>
 						<pre class="prettyprint lang-html">
 $('#slide .section').animate({ 
     opacity : 0,
@@ -44,7 +45,7 @@ $('#slide .section').animate({
     left: 100 + 'px'
 }, 1000);</pre>
 			</section>
-			
+
 			<section>
 				<h2>タグの数だけ繰り返し処理を行う</h2>
 				
@@ -53,7 +54,7 @@ $("タグ").each(function(i){
 処理
 });
 </pre>
-					<p>例</p>
+				<p>例</p>
 						<pre class="prettyprint lang-html">
 $('#slide .section').each(function(i){
 	console.log(i);
@@ -66,7 +67,5 @@ $('#slide .section').each(function(i){
 		</div>
 	</article>
 </div>
-
-
 </body>
 </html>

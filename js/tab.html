@@ -1,15 +1,16 @@
 <!DOCTYPE>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/import.css">
-<title>タブを作ってみる。</title>
-
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/import.css">
+	<title>タブを作ってみる。</title>
 </head>
 <body>
 
 <div id="content">
 	<article role="main">
+		<h1>タブを作ってみる。</h1>
+
 		<div class="content">
 			<section>
 				<h2>ページが読み込まれたら関数を実行</h2>
@@ -20,14 +21,16 @@ function load() {
 処理
 }
 </pre>
-				
+
 			</section>
-		
+
 			<section>
 				<h2>タグへのアクセス</h2>
 				<section>
 					<h3>getElementById(アクセスしたいタグのid);</h3>
+
 					<p>idでタグアクセス</p>
+
 					<p>例</p>
 						<pre class="prettyprint lang-html">&lt;div id="tab"&gt;
 .
@@ -39,7 +42,9 @@ var tab = document.getElementById('tab');
 				</section>
 				<section>
 					<h3>getElementsByClassName(アクセスしたいタグのclass);</h3>
+
 					<p>classでタグにアクセス（上から順番にクラスが付いているタグが入った、配列を返してくれます。）</p>
+
 					<p>例</p>
 						<pre class="prettyprint lang-html">&lt;ul class=&quot;nav&quot;&gt;
 .
@@ -64,6 +69,7 @@ var nav = tab.getElementsByClassName('nav')[0];
 				</section>
 				<section>
 					<h3>getElementsByTagName(アクセスしたいタグ名);</h3>
+
 					<p>タグ名でアクセス（上から順番に指定したタグが入った、配列を返してくれます。）</p>
 										
 					<pre class="prettyprint lang-html">&lt;ul class=&quot;nav&quot;&gt;
@@ -80,11 +86,13 @@ var nav = tab.getElementsByClassName('nav')[0];
 var navBtn = nav.getElementsByTagName('li');
 </pre>
 				</section>
-				</section>	
+			</section>
 			</section>
 			<section>
 				<h2>クリック時に関数を実行</h2>
+
 				<p>タグ.click = 実行したい関数;</p>
+
 				<p>例</p>
 				<pre class="prettyprint lang-js">
 document.onclick = test;
@@ -107,10 +115,12 @@ var tab = document.getElementById('tab');
 var nav = tab.getElementsByClassName('nav')[0];
 var navBtn = nav.getElementsByTagName('li');
 </pre>
-				
+
 				<section>
 					<h3>id名を取得</h3>
+
 					<p>タグ.id</p>
+
 					<p>例</p>
 					<pre class="prettyprint lang-js">
 console.log(navBtn[0].id);
@@ -121,7 +131,9 @@ nav0
 				</section>
 				<section>
 					<h3>class名を取得</h3>
+
 					<p>タグ.className</p>
+
 					<p>例</p>
 					<pre class="prettyprint lang-js">
 console.log(nav.className);
@@ -130,14 +142,15 @@ console.log(nav.className);
 nav
 </pre>
 				</section>
-				
+
 			</section>
 
 			<section>
 				<h2>指定時間の感覚で関数を実行</h2>
-				
+
 				<p>setInterval(関数名, 速さ（ミリ秒）);</p>
-					<p>例</p>
+
+				<p>例</p>
 				
 					<pre class="prettyprint lang-js">
 // 自動処理のスピード : 2000ミリ秒（2秒）の感覚

@@ -1,15 +1,16 @@
 <!DOCTYPE>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/import.css">
-<title>タブを作ってみる。</title>
-
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/import.css">
+	<title>タブを作ってみる。</title>
 </head>
 <body>
 
 <div id="content">
 	<article role="main">
+		<h1>タブを作ってみる。</h1>
+
 		<div class="content">
 			<section>
 				<h2>ページが読み込まれたら関数を実行</h2>
@@ -18,14 +19,16 @@ $(function(){
 処理
 });
 </pre>
-				
+
 			</section>
-		
+
 			<section>
 				<h2>タグへのアクセス</h2>
 				<section>
 					<h3>$('アクセスしたいタグをCSSセレクタの用量で指定');</h3>
+
 					<p>タグアクセス</p>
+
 					<p>例</p>
 						<pre class="prettyprint lang-html">&lt;div id="tab"&gt;
 
@@ -76,8 +79,13 @@ $('#tab .nav li').click(function () {
 	 &lt;li id=&quot;nav1&quot;&gt;コンテンツ2&lt;/li&gt;
 	 &lt;li id=&quot;nav2&quot;&gt;コンテンツ3&lt;/li&gt;
 &lt;/ul&gt;</pre>
-				
-				<p>$('タグ').attr('属性');</p>
+
+				<pre class="prettyprint lang-html">$('タグ').attr('属性');</pre>
+
+				<h3>上から何番目かを指定してタグにアクセスする【eq】（はじめは0番目から）</h3>
+				<pre class="prettyprint lang-html">//上から2番目のタグにアクセスする。
+$('#tab .nav li').eq(1)</pre>
+
 				<p>例</p>
 				<pre class="prettyprint lang-js">
 //id名を取得
@@ -89,12 +97,10 @@ console.log($('#tab .nav').eq(0).attr('class'));
 nav0
 nav
 </pre>
-				
+
 			</section>
 		</div>
 	</article>
 </div>
-
-
 </body>
 </html>
