@@ -1,19 +1,20 @@
 <!DOCTYPE>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/import.css">
-<title>配列（Array）と連想配列（Object）</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/import.css">
+	<title>配列（Array）と連想配列（Object）</title>
 </head>
 <body>
 
 <div id="content">
 	<article role="main">
-	
+		<h1>配列（Array）と連想配列（Object）</h1>
+
 		<div class="content">
 			<section>
 				<h2>配列（Array）</h2>
-				
+
 				<section>
 					<h3>配列の宣言</h3>
 <pre>
@@ -23,9 +24,12 @@ fruits  = ['りんご','バナナ','パイナップル','ぶどう','すいか',
 				</section>
 				<section>
 					<h3>配列の取り出し方</h3>
-<p>変数名[配列番号]</p>
-<p>※最初の配列を0番目として数えていくことに注意。</p>
-<p>例）</p>
+
+					<p>変数名[配列番号]</p>
+
+					<p>※最初の配列を0番目として数えていくことに注意。</p>
+
+					<p>例）</p>
 <pre>
 console.log(fruits[0]); //りんご
 console.log(fruits[1]); //バナナ
@@ -48,9 +52,12 @@ var fruits = [
 </pre>
 				<section>
 					<h3>多次元配列の取り出し方</h3>
-<p>変数名[配列番号][配列番号]</p>
-<p>※最初の配列を0番目として数えていくことに注意。</p>
-<p>例）</p>
+
+					<p>変数名[配列番号][配列番号]</p>
+
+					<p>※最初の配列を0番目として数えていくことに注意。</p>
+
+					<p>例）</p>
 <pre>
 console.log(fruits[0][0]); //りんご
 console.log(fruits[1][1]); //みかん
@@ -61,7 +68,7 @@ console.log(fruits[2][0]); //バナナ
 
 			<section>
 				<h2>連想配列（Object）</h2>
-				
+
 				<section>
 					<h3>連想配列の宣言</h3>
 <pre>
@@ -72,15 +79,15 @@ fruits = {
 	yellow : 'バナナ'
 };
 </pre>
-<p>※ 左側のred,orange,yellowの部分を <em>添字</em>といいます。</p>
+					<p>※ 左側のred,orange,yellowの部分を <em>添字</em>といいます。</p>
 				</section>
 				<section>
 					<h3>連想配列の取り出し方</h3>
-<ol>
-<li>変数名.添字</li>
-<li>変数名['添字']　※ こっちだと<em>'添字'</em>部分を変数にできるので 、うまい具合に使い分けましょう。</li>
-</ol>
-<p>例）</p>
+					<ol>
+						<li>変数名.添字</li>
+						<li>変数名['添字']　※ こっちだと<em>'添字'</em>部分を変数にできるので 、うまい具合に使い分けましょう。</li>
+					</ol>
+					<p>例）</p>
 <pre>
 console.log(fruits.red); //りんご
 console.log(fruits['orange']); //みかん
@@ -90,8 +97,7 @@ console.log(fruits[banana]); //バナナ
 </pre>
 				</section>
 			</section>
-			
-			
+
 
 			<section>
 				<h2>連想配列と多次元配列を使って整理</h2>
@@ -116,6 +122,5 @@ console.log(fruits[banana][0]); //バナナ
 		</div>
 	</article>
 </div>
-
 </body>
 </html>
