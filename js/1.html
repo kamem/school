@@ -18,30 +18,49 @@
 				<p>var 変数名;</p>
 				<section>
 					<h3>【演算子（代入演算子）】</h3>
-					<ul>
-						<li>a = b; a に b を代入</li>
-						<li>a += b; a と b を足した値をaに代入（a = a + b）</li>
-						<li>a -= b; a と b を引いた値をaに代入（a = a - b）</li>
-						<li>a *= b; a と b を掛けた値をaに代入（a = a * b）</li>
-						<li>a /= b; a と b を割った値をaに代入（a = a / b）</li>
-						<li>a %= b; a と b を割った余りをaに代入（a = a % b）</li>
-					</ul>
+					<dl class="table">
+						<dt>+</dt>
+						<dd>足し算</dd>
+						<dt>-</dt>
+						<dd>引き算</dd>
+						<dt>*</dt>
+						<dd>掛け算</dd>
+						<dt>/</dt>
+						<dd>割り算</dd>
+						<dt>%</dt>
+						<dd>余り</dd>
+					</dl>
+					<dl class="table">
+						<dt>a = b;</dt>
+						<dd>a に b を代入</dd>
+						<dt>a += b;</dt>
+						<dd>a = a + b</dd>
+						<dt>a -= b;</dt>
+						<dd>a = a - b</dd>
+						<dt>a *= b;</dt>
+						<dd>a = a * b</dd>
+					</dl>
 				</section>
 
 				<section>
 					<h3>aに1を足す</h3>
-					<ul>
-						<li>a++;</li>
-						<li>++a;</li>
-					</ul>
+
+					<dl class="table">
+						<dt>a++;</dt>
+						<dd>a = a + 1</dd>
+						<dt>++a;</dt>
+						<dd>a = a + 1</dd>
+					</dl>
 				</section>
 
 				<section>
 					<h3>aから1を引く</h3>
-					<ul>
-						<li>a--;</li>
-						<li>--a;</li>
-					</ul>
+					<dl class="table">
+						<dt>a--;</dt>
+						<dd>a = a - 1</dd>
+						<dt>--a;</dt>
+						<dd>a = a - 1</dd>
+					</dl>
 				</section>
 
 				<section>
@@ -90,24 +109,42 @@
 
 				<section>
 					<h2>比較演算子</h2>
-					<ul>
-						<li>a == b 値が等しい場合にtrue</li>
-						<li>a === b 値と型が等しい場合 true</li>
-						<li>a != b 値が等しくない場合 true</li>
-						<li>a !== b 値と型が等しくない場合 true</li>
-						<li>a &gt; b a より b が小さい場合 true</li>
-						<li>a &lt; b a が b より小さい場合 true</li>
-						<li>a &gt;= b a が b 以上の場合 true</li>
-						<li>a &lt;= b a が b 以下の場合 true</li>
-					</ul>
+
+					<dl class="table">
+						<dt>a === b</dt>
+						<dd>値と型が等しい場合 true</dd>
+						<dt>a !== b</dt>
+						<dd>値と型が等しくない場合 true</dd>
+						<dt>a &gt; b</dt>
+						<dd>a が b より大きい場合 true</dd>
+						<dt>a &lt; b</dt>
+						<dd>a が b より小さい場合 true</dd>
+						<dt>a &gt;= b</dt>
+						<dd>a が b 以上の場合 true</dd>
+						<dt>a &lt;= b</dt>
+						<dd>a が b 以下の場合 true</dd>
+					</dl>
 				</section>
 				<section>
 					<h2>論理演算子</h2>
-					<ul>
-						<li>a &amp;&amp; b a b 2つの式・値が正しい（tureの）場合 true</li>
-						<li>a || b a b どちらかの式・値が正しい（tureの）場合 true</li>
-						<li>!a aが正しくない（falseの）場合 true</li>
-					</ul>
+					<dl class="table">
+						<dt>a &amp;&amp; b</dt>
+						<dd>aとb 2つの式・値が<em>どちらも</em>正しい場合 true</dd>
+						<dt>a || b</dt>
+						<dd>aとb <em>どちらか</em>の式・値が正しい場合 true</dd>
+						<dt>!a</dt>
+						<dd>値を反転する（aが正しくない場合 true、正しい場合はfalse）</dd>
+					</dl>
+
+					<h3>例)</h3>
+					<pre>
+var num = 10;
+//numが3より大きいかつ、20より小さい値のためtrue
+console.log(num > 3 &amp;&amp; num < 20)
+// numが10もしくは20の場合trueなのでこの場合10 === 10がのためtrue
+console.log(num === 10 || num === 20)
+// 上と同じ値を!(式)!で反転しているためfalse
+console.log(!(num === 10 || num === 20)) //false</pre>
 				</section>
 
 				<section>
